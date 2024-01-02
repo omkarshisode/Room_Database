@@ -7,6 +7,4 @@ import androidx.room.Query
 interface UserDao {
     @Query("SELECT * FROM user")
     fun getAll():List<UserInfo>
-
-    @Query("SELECT * FROM user WHERE Abcd@123")
 }
